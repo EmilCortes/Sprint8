@@ -1,0 +1,30 @@
+.btn-primary {
+  margin-top: 20px;
+
+}
+
+.main-container a {
+  color: #ffffffa9;
+  text-decoration: none;
+
+}
+
+.main-container {
+  list-style: none;
+
+}
+
+.main-container li {
+  margin-bottom: 20px;
+  width: 700px;
+  padding: 10px;
+  background-color: rgb(28, 28, 28);
+  border: 1px solid rgb(54, 53, 53);
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.main-container strong {
+  text-transform: uppercase;
+}

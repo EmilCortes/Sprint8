@@ -1,0 +1,35 @@
+<div class="main-container">
+  <div *ngIf="starship" class="starship-details">
+    <h2>Starship details</h2>
+    <img [src]="imgUrl" alt="Imagen de la Nave" (error)="handleImageError()" class="starship-image">
+    <div class="details-container">
+      <div class="details-1">
+        <ul>
+          <li><strong>Name:</strong> {{ starship.name }}</li>
+          <!-- Agrega más detalles aquí según las propiedades de la nave que desees mostrar -->
+          <li><strong>Model:</strong> {{ starship.model }}</li>
+          <li><strong>Manufacturer:</strong> {{ starship.manufacturer }}</li>
+          <li><strong>Cost:</strong> {{ starship.cost_in_credits }}</li>
+        </ul>
+      </div>
+      <div class="details-2-and-3">
+        <ul class="details-2">
+          <li><strong>Crew:</strong> {{ starship.crew }}</li>
+          <li><strong>Passengers:</strong> {{ starship.passengers }}</li>
+          <li><strong>Cargo Capacity:</strong> {{ starship.cargo_capacity }}</li>
+          <li><strong>Consumables:</strong> {{ starship.consumables }}</li>
+        </ul>
+
+        <ul class="details-3">
+          <li><strong>Length:</strong> {{ starship.length }}</li>
+          <li><strong>Maximum Atmospheric Speed:</strong> {{ starship.max_atmosphering_speed }}</li>
+          <li><strong>Hyperdrive Rating:</strong> {{ starship.hyperdrive_rating }}</li>
+          <li><strong>Max Atmospheric Speed:</strong> {{ starship.max_atmosphering_speed }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!starship">
+    <p>Charging starship details...</p>
+  </div>
+</div>

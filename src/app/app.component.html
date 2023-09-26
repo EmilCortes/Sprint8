@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark px-3 mb-3" *ngIf="user">
+  <div class="container-fluid">
+    <div class="navbar-nav justify-content-center align-item-center flex-grow-1">
+      <a class="nav-item nav-link" routerLink="/">Home</a>
+      <a class="nav-item nav-link" routerLink="/starships">Starships</a>
+    </div>
+    <div class="navbar-nav ml-auto">
+      <button class="btn btn-link nav-item nav-link" (click)="logout()">Logout</button>
+    </div>
+  </div>
+</nav>
+
+
+<!-- main app container -->
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

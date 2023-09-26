@@ -1,0 +1,11 @@
+html, body, app-root{
+  background-color: black;
+  color: white
+}
+
+
+.star-wars-logo{
+  max-height: 200px;
+  max-width: 200px;
+  display: flex;
+}
